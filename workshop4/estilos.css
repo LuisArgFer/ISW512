@@ -1,0 +1,85 @@
+body {
+  background-color: white;
+}
+
+.fist {
+  margin-top: 10%;
+  margin-left: 25%;
+  margin-right: auto;
+  width: 980px;
+  margin-bottom: 12%;
+}
+
+img.phone {
+  width: 183px;
+  right: 47px;
+  top: -6px;
+  position: absolute;
+}
+
+img.phone1 {
+  width: 200px;
+  right: 98px;
+  top: -5px;
+  position: absolute;
+}
+
+img.img1 {
+  width: 300px;
+  right: 440px;
+  position: absolute;
+}
+
+img.img2 {
+  width: 300px;
+  right: 170px;
+  position: relative;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+.first1 {
+  text-align: center;
+  padding: 8%;
+}
+
+.table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table th {
+  color: #1E90FF;
+  text-align: center;
+  font-size: 1.5em;
+  padding-left: 2cm;
+}
+
+.second {
+  background-color: #66CDAA;
+  color: white;
+  text-align: center;
+  padding: 8%;
+}
+
+.table td {
+  height: 20px;
+  text-align: center;
+  color: white;
+  padding-left: 2cm;
+}
+
+.second-section {
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+.button1 {
+  border-radius: 20%;
+  background-color: #1E90FF;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+}

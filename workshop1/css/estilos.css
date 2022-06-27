@@ -1,0 +1,73 @@
+body
+{
+    color:gray;
+    background:wheat;
+    text-align: center;
+    font-family: "Arial";
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+#cabecera 
+{
+    background: grey;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 0.5em;
+    font-size: 25px;
+}
+
+#cabecera1 
+{
+    background: grey;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 0.5em;
+    font-size: 25px;
+}
+
+#cabecera #tagline2
+{
+    font-weight: normal;
+    font-size: 25px;
+    color: white;
+    
+}
+
+#cabecera1 #tagline2
+{
+    font-weight: normal;
+    font-size: 25px;
+    color: white;
+    
+}
+
+
+#post
+{
+    text-align: center;
+    background: wheat;
+    padding: 1em;
+}
+
+#info
+{
+    text-align: center;
+    background: white;
+    padding: 1em;
+}
+
+#pie
+{
+    text-align: left;
+    background: wheat;
+    padding: 1em;
+
+
+
+}
