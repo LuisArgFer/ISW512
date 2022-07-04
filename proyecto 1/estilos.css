@@ -1,18 +1,73 @@
 body {
     font-size: 12px;
-    Color: #606060;
+    background-color: grey;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.inicio {
+    background-color: white;
+    width: 1497px;
+    color: white;
+    padding: 12%;
+    text-align: center;
+}
+
+.medium {
+    background-color: whitesmoke;
+    width: 1493px;
+    color: white;
+    padding: 13%;
+    text-align: center;
+}
+
+.end{
+    background-color: white;
+    width: 1404px;
+    color: white;
+    padding: 14%;
+    text-align: center;
+}
+
+.end h2 {
+    font-size: 28px;
+    color: black;
+    text-align: center;
+}
+
+
+.inicio h1 {
+    font-size: 28px;
+    color: black;
+    text-align: center;
+}
+
+.inicio h3{
+    color: black;
 
 }
 
-.Inicio {
-    background-color: #606060;
+#parrafo{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
 }
 
-h1 {
-    font-weight: bold;
-    font-size: 16px
+.medium #secondtitle{
+    font-size: 28px;
+    color: black;
+   
+  
 }
+
+.search {
+    padding: 5px;
+    width: 250px;
+    font-family: "Font Awesome 6 free";
+    font-weight: 900;
+}
+
+
 
 h2 {
     font-weight: bold;
@@ -24,9 +79,12 @@ h2 {
     background-color: gray;
     color: white;
     border: none;
-    padding: 10px 24px;
-    font-size: 11px;
-    float: right;
+    padding:  10px 24px;
+    font-size: 10px;
+    width: 112px;
+    right: 119px;
+    top: 22px;
+    position: absolute;
 }
 
 .button2 {
@@ -35,7 +93,10 @@ h2 {
     border: none;
     padding: 10px 24px;
     font-size: 11px;
-    float: right;
+    width: 59px;
+    right: 254px;
+    top: 22px;
+    position: absolute;
 }
 
 .button3 {
@@ -44,7 +105,10 @@ h2 {
     border: none;
     padding: 10px 24px;
     font-size: 11px;
-    float: right;
+    width: 59px;
+    right: 346px;
+    top: 22px;
+    position: absolute;
 }
 
 .button4 {
@@ -53,9 +117,81 @@ h2 {
     border: none;
     padding: 10px 24px;
     font-size: 11px;
-    float: right;
+    width: 59px;
+    right: 401px;
+    top: 22px;
+    position: absolute;
+}
+
+.button5 {
+    border-radius: 10%;
+    background-color: gray;
+    color: white;
+    border: none;
+    padding:  10px 24px;
+    font-size: 10px;
+    width: 115px;
+    right: 666px;
+    top: 343px;
+    position: absolute;
 }
 
 #logo1 {
     width: 10px;
 }
+
+#logo {
+    width: 59px;
+    left: 122px;
+    top: 22px;
+    position: absolute;
+}
+
+#img1 {
+    width: 181px;
+}
+
+
+.one {
+    float: left;
+    padding-left: 329px;
+}
+
+#electronicos{
+    color: black;
+
+}
+
+#img2 {
+    width: 202px;
+}
+
+
+.two {
+    float: left;
+    padding-left: 120px;
+   
+}
+
+#hogar{
+    color: black;
+
+}
+
+#img3 {
+    width: 172px;
+}
+
+
+.three {
+    float: left;
+    padding-left: 120px;
+    
+}
+
+#negocio{
+    color: black;
+
+}
+
+
