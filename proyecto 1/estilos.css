@@ -1,32 +1,28 @@
 body {
-    font-size: 12px;
-    background-color: grey;
-    font-family: Arial, Helvetica, sans-serif;
+    background: #606060;
+    width: 789px;
 }
 
 .inicio {
     background-color: white;
-    width: 1497px;
+    width: 1393px;
     color: white;
+    height: auto;
     padding: 12%;
     text-align: center;
 }
 
 .medium {
     background-color: whitesmoke;
-    width: 1493px;
+    width: 1440px;
     color: white;
-    padding: 13%;
+    height: 229px;
+    margin: auto;
+    padding: 9%;
     text-align: center;
 }
 
-.end{
-    background-color: white;
-    width: 1404px;
-    color: white;
-    padding: 14%;
-    text-align: center;
-}
+
 
 .end h2 {
     font-size: 28px;
@@ -41,23 +37,21 @@ body {
     text-align: center;
 }
 
-.inicio h3{
+.inicio h3 {
     color: black;
 
 }
 
-#parrafo{
+#parrafo {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 
 }
 
-.medium #secondtitle{
-    font-size: 28px;
+.medium #secondtitle {
+    font-size: 26px;
     color: black;
-   
-  
 }
 
 .search {
@@ -79,7 +73,7 @@ h2 {
     background-color: gray;
     color: white;
     border: none;
-    padding:  10px 24px;
+    padding: 10px 24px;
     font-size: 10px;
     width: 112px;
     right: 119px;
@@ -128,11 +122,11 @@ h2 {
     background-color: gray;
     color: white;
     border: none;
-    padding:  10px 24px;
+    padding: 10px 24px;
     font-size: 10px;
     width: 115px;
-    right: 666px;
-    top: 343px;
+    right: 520px;
+    top: 214px;
     position: absolute;
 }
 
@@ -154,10 +148,10 @@ h2 {
 
 .one {
     float: left;
-    padding-left: 329px;
+    padding-left: 314px;
 }
 
-#electronicos{
+#electronicos {
     color: black;
 
 }
@@ -170,28 +164,121 @@ h2 {
 .two {
     float: left;
     padding-left: 120px;
-   
+
 }
 
-#hogar{
+#hogar {
     color: black;
 
 }
 
 #img3 {
-    width: 172px;
+    width: 173px;
 }
 
 
 .three {
     float: left;
     padding-left: 120px;
-    
+
 }
 
-#negocio{
+#negocio {
     color: black;
 
 }
 
 
+.end {
+    background-color: white;
+    color: white;
+    width: 1582px;
+    height: auto;
+    margin: -161px auto -9px;
+    padding: 0%;
+    overflow: hidden;
+}
+
+.end ul {
+    display: flex;
+    padding: 54px;
+    width: 372%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.end li {
+    width: 100%;
+    list-style: none;
+}
+
+.end img {
+    width: 17%;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+
+#footer {
+    background-color: whitesmoke;
+    width: 1434px;
+    color: white;
+    height: 8px;
+    margin: auto;
+    padding: 9%;
+    text-align: center;
+}
+
+#footer a {
+    color: black;
+    padding: 0 4px;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    background-color: white;
+    color: #D7C8B6;
+}
+
+#footer li {
+    background-color: #F6E3CA;
+    border: #D7C8B6 2px solid;
+    display: inline;
+    margin-right: 10px;
+}
+
+#footer ul {
+    list-style-type: none;
+    text-align: center
+}
