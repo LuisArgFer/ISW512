@@ -272,13 +272,16 @@ h2 {
 }
 
 #footer li {
-    background-color: #F6E3CA;
-    border: #D7C8B6 2px solid;
+    border: #ffffff 2px solid;
     display: inline;
-    margin-right: 10px;
+    margin-right: 19px;
 }
 
 #footer ul {
     list-style-type: none;
     text-align: center
+}
+
+#footer h3{
+    color: black;
 }
