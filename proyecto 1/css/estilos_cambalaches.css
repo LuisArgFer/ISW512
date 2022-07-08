@@ -1,0 +1,231 @@
+body {
+    background: #606060;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: auto;
+}
+
+#container {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 0px auto;
+}
+
+header {
+    background: white;
+    height: 100px;
+    width: 100%;
+
+}
+
+#logo1 {
+    width: 10px;
+}
+
+#logo {
+    width: 59px;
+    left: 122px;
+    top: 22px;
+    position: absolute;
+}
+
+.inicio {
+    background-color: white;
+    width: 96%;
+    height: 100px;
+    color: white;
+    height: auto;
+    padding: 2%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.inicio h1 {
+    font-size: 28px;
+    color: black;
+    text-align: center;
+}
+
+.inicio p {
+    color: black;
+
+}
+
+.button1 {
+    border-radius: 10%;
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    font-size: 10px;
+    width: 112px;
+    right: 119px;
+    top: 22px;
+    position: absolute;
+}
+
+.button2 {
+    background-color: white;
+    color: gray;
+    border: none;
+    padding: 10px 24px;
+    font-size: 11px;
+    width: 59px;
+    right: 254px;
+    top: 22px;
+    position: absolute;
+}
+
+.button3 {
+    background-color: white;
+    color: gray;
+    border: none;
+    padding: 10px 24px;
+    font-size: 11px;
+    width: 59px;
+    right: 346px;
+    top: 22px;
+    position: absolute;
+}
+
+.button4 {
+    background-color: white;
+    color: gray;
+    border: none;
+    padding: 10px 24px;
+    font-size: 11px;
+    width: 59px;
+    right: 401px;
+    top: 22px;
+    position: absolute;
+}
+
+.articulos{
+    background-color: white;
+    border-top: 0px solid black;
+    padding: 1em;
+    height: 423px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding-top: 6em;
+    padding-bottom: 171px;
+}
+
+.link{
+    padding-left: 20px;
+
+}
+
+.articulos .persona1 {
+    font-size: 13px;
+    font-weight: 10px;
+}
+
+
+.imagen1 {
+    width: 210px;
+    height: 140px;
+    float: left;
+}
+
+.imagen2 {
+    width: 210px;
+    width: 210px;
+    height: 140px;
+    float: left;
+
+}
+
+.producto1 {
+    float: left;
+    padding-left: 303px;
+}
+
+.producto2 {
+    float: left;
+    padding-left: 44px;
+}
+
+.producto3 {
+    float: left;
+    padding-left: 128px;
+}
+
+.producto4 {
+    float: left;
+    padding-left: 298px;
+    padding-top: 80px;
+}
+
+.producto5 {
+    float: left;
+    padding-left: 61px;
+    padding-top: 80px;
+}
+
+.producto6 {
+    float: left;
+    padding-left: 115px;
+    padding-top: 80px;
+}
+
+.producto7 {
+    float: left;
+    padding-left: 299px;
+    padding-top: 80px;
+}
+
+.producto8 {
+    float: left;
+    padding-left: 65px;
+    padding-top: 80px;
+}
+
+.producto9 {
+    float: left;
+    padding-left: 117px;
+    padding-top: 80px;
+}
+
+.footer {
+    background: white;
+    width: 100%;
+    color: white;
+    height: -8px;
+    margin: auto;
+    padding: 0%;
+    text-align: center;
+    border: 1px solid black;
+}    
+
+.footer a {
+    color: black;
+    padding: 0 4px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    background-color: white;
+    color: #D7C8B6;
+}
+
+.footer li {
+    border: #ffffff 2px solid;
+    display: inline;
+    margin-right: 19px;
+}
+
+.footer ul {
+    list-style-type: none;
+    text-align: center
+}
+
+.footer h3{
+    color: grey;
+}
