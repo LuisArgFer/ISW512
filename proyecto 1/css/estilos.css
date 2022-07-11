@@ -212,14 +212,16 @@ h2 {
 
 
 .end {
-    background-color: white;
+    background-color: whitesmoke;
+    width: 96%;
     color: white;
-    width: 1585px;
-    height: 469px;
-    margin: -161px auto -9px;
-    padding: 0%;
-    overflow: hidden;
+    height: 268px;
+    margin: auto;
+    padding: 2%;
+    text-align: center;
 }
+
+
 
 
 
@@ -267,63 +269,37 @@ h2 {
 }
 
 
-ul,
-li {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+#articulo1 {
+    width: 180px;
 }
 
-ul.slider {
-    position: relative;
-    width: 55%;
-    height: 313px;
+
+.uno {
+    float: left;
+    padding-left: 328px;
 }
 
-ul.slider li {
-    position: absolute;
-    left: 551px;
-    top: 0px;
-    opacity: 0;
-    width: inherit;
-    height: inherit;
-    transition: opacity .5s;
-    background: #fff;
+
+
+#articulo2 {
+    width: 202px;
 }
 
-ul.slider li img {
-    width: 83%;
-    height: 272px;
-    object-fit: cover;
+
+.dos {
+    float: left;
+    padding-left: 155px;
 }
 
-ul.slider li:first-child {
-    opacity: 1;
+
+
+#articulo3 {
+    width: 142px;
 }
 
-ul.slider li:target {
-    opacity: 1;
-    
+
+.tres {
+    float: left;
+    padding-left: 168px;
 }
 
-.menu {
-    text-align: center;
-    margin: 20px;
-}
-
-.menu li {
-    display: inline-block;
-    text-align: center;
-}
-
-.menu li a {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    background-color: grey;
-    padding: 10px;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    border-radius: 100%;
-}
