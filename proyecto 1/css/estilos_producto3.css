@@ -43,7 +43,7 @@ header {
     padding: 10px 24px;
     font-size: 10px;
     width: 112px;
-    right: 106px;
+    right: 119px;
     top: 22px;
     position: absolute;
 }
@@ -52,10 +52,10 @@ header {
     background-color: white;
     color: gray;
     border: none;
-    padding: 10px 24px;
+    padding: 10px 9px;
     font-size: 11px;
     width: 59px;
-    right: 254px;
+    right: 261px;
     top: 22px;
     position: absolute;
 }
@@ -64,10 +64,10 @@ header {
     background-color: white;
     color: gray;
     border: none;
-    padding: 10px 24px;
+    padding: 10px 0px;
     font-size: 11px;
-    width: 59px;
-    right: 346px;
+    width: 69px;
+    right: 337px;
     top: 22px;
     position: absolute;
 }
@@ -79,14 +79,14 @@ header {
     padding: 10px 24px;
     font-size: 11px;
     width: 59px;
-    right: 401px;
+    right: 430px;
     top: 22px;
     position: absolute;
 }
 
 .button5{
     background-color: rgb(78, 78, 78);
-    color: white !important;
+    color: white;
     height: 40px;
     width: 150px;
     margin-right: 687px;

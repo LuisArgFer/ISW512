@@ -107,10 +107,10 @@ h2 {
     background-color: white;
     color: gray;
     border: none;
-    padding: 10px 24px;
+    padding: 10px 9px;
     font-size: 11px;
     width: 59px;
-    right: 254px;
+    right: 261px;
     top: 22px;
     position: absolute;
 }
@@ -119,10 +119,10 @@ h2 {
     background-color: white;
     color: gray;
     border: none;
-    padding: 10px 24px;
+    padding: 10px 0px;
     font-size: 11px;
-    width: 59px;
-    right: 346px;
+    width: 69px;
+    right: 337px;
     top: 22px;
     position: absolute;
 }
@@ -134,7 +134,7 @@ h2 {
     padding: 10px 24px;
     font-size: 11px;
     width: 59px;
-    right: 401px;
+    right: 430px;
     top: 22px;
     position: absolute;
 }
@@ -210,6 +210,20 @@ h2 {
 
 }
 
+#electronicos1 {
+    color: black;
+
+}
+
+#hogar1 {
+    color: black;
+
+}
+
+#negocio1 {
+    color: black;
+
+}
 
 .end {
     background-color: whitesmoke;
