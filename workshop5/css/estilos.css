@@ -9,9 +9,15 @@ body {
 }
 
 main{
+    background-color: white;
+    text-align: center;
+    width: 100%;
+}
+header{
     background-color: yellow;
     text-align: center;
     width: 100%;
+
 }
 .cuerpo{
     color: white;
@@ -37,13 +43,13 @@ main{
     padding: 2px;
 }
 
-@media only screen and (min-width: 600px) {
+@media (min-width: 600px) {
     div.cuerpo select{
         display: none;
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
 	.cuerpo{
         display: block;
     }
