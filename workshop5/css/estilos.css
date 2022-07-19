@@ -1,0 +1,60 @@
+main{
+    background-color: yellow;
+    text-align: center;
+    width: 100%;
+}
+.cuerpo{
+    color: white;
+    gap: 24px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.cuadro1{
+    background-color: orange;
+    padding: 14px;
+}
+.cuadro2{
+    background-color: blue;
+    padding: -3px;
+}
+.cuadro3{
+    background-color: blue;
+    padding: 27px;
+}
+.cuadro4{
+    background-color: blue;
+    grid-column: 3;
+    padding: 2px;
+}
+
+@media only screen and (min-width: 600px) {
+    div.cuerpo select{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+	.cuerpo{
+        display: block;
+    }
+    .cuadro1{
+        margin-top:10px;
+    }
+    .cuadro2{
+        margin-top:10px;
+    }
+    .cuadro3{
+        margin-top:10px;
+    }
+    .cuadro4{
+        margin-top:10px;
+    }
+    div.cuerpo a{
+        display: none;
+    }
+}
+
+footer{
+    background-color: pink;
+    width: 100%;
+}
