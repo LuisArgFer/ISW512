@@ -1,3 +1,13 @@
+body {
+    background: white;
+    text-align: center;
+    font-size: 14px;
+    margin: 16px;
+    padding: -1px;
+    box-sizing: border-box;
+    height: auto;
+}
+
 main{
     background-color: yellow;
     text-align: center;
