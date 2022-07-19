@@ -20,7 +20,7 @@ main{
     grid-template-columns: auto auto auto;
 }
 .cuadro1{
-    background-color: orange;
+    background-color:green;
     padding: 14px;
 }
 .cuadro2{
