@@ -2,30 +2,30 @@ document.querySelector('#boton').addEventListener('click', guarpersona);
 insertarpersonatabla();
 
 function guarpersona() {
-    var sNombre = document.querySelector('#Nombre').value,
-        sApellido = document.querySelector('#Apellido').value,
-        sNumero = document.querySelector('#Numero').value;
+    let perNombre = document.querySelector('#Nombre').value,
+        perApellido = document.querySelector('#Apellido').value,
+        perNumero = document.querySelector('#Numero').value;
 
-    añadirpersona(sNombre, sApellido, sNumero)
+    añadirpersona(perNombre, perApellido, perNumero)
     insertarpersonatabla();
 }
 
 function insertarpersonatabla() {
-    var list = obtenerpersona(),
+    let list = obtenerpersona(),
         tbody = document.querySelector('#Table tbody');
 
     tbody.innerHTML = '';
 
     for (var i = 0; i < list.length; i++) {
-        var row = tbody.insertRow(i),
-            nameCell = row.insertCell(0),
-            lastnameCell = row.insertCell(1),
-            numberCell = row.insertCell(2);
+        let row = tbody.insertRow(i),
+            nombre = row.insertCell(0),
+            apellido = row.insertCell(1),
+            numero = row.insertCell(2);
 
 
-        nameCell.innerHTML = list[i].nombre;
-        lastnameCell.innerHTML = list[i].apellido;
-        numberCell.innerHTML = list[i].numero;
+        nombre.innerHTML = list[i].nombre;
+        apellido.innerHTML = list[i].apellido;
+        numero.innerHTML = list[i].numero;
 
         tbody.appendChild(row);
 

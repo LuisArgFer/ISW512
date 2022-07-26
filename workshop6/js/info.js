@@ -1,8 +1,8 @@
-var personainfo = [];
+let personainfo = [];
 
 function añadirpersona(pernombre, perapellido, pernumero) {
 
-    var personañ = {
+    let personañ = {
         nombre : pernombre,
         apellido : perapellido,
         numero : pernumero
@@ -12,7 +12,8 @@ function añadirpersona(pernombre, perapellido, pernumero) {
 }
 
 function obtenerpersona(){
-    var personaalmacenada = localStorage.getItem('localpersonainfo');
+    
+    let personaalmacenada = localStorage.getItem('localpersonainfo');
     if(personaalmacenada == null){
         personainfo =[];
     }else {
