@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.registroper {
+    width: 705px;
+    background: #b6cfe7;
+    padding: 30px;
+    margin: auto;
+    margin-top: 63px;
+    font-family: auto;
+    color: white;
+}
+
+.registroper h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info {
+    width: 55%;
+    background: white;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: "calibri";
+    font-size: 18px
+}
+
+.registroper p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.registroper .button {
+    width: 27%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100;
+
+
+}
+
+th {
+    color: white;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+}
