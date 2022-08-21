@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/estilos_crear.css" />
+    <title>Crear-Editar Producto</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="images/logo.png" alt="imgenesquina">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio | </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cambalaches | </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">DashBoard | </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">🛒Mi carrito</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center pt-5 pb-1">
+        <h2>Nuevo Producto</h2>
+    </div>
+
+    <div class="container-fluid text-center">
+        <p>Ingrese aquí la informacion del producto que desea ingresar en Cambalaches.net</p>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center ">
+            <div class="col-6 pt-1 pb-1 ">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control mx-1 " placeholder="Producto" aria-label="Producto"
+                        aria-describedby="button-addon2" id="producto">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center desc">
+            <div class="col-6 pt-1 pb-1 ">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control mx-1 " placeholder="Descripcion" aria-label="Descripcion"
+                        aria-describedby="button-addon2" id="descripcion">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center urlimg">
+            <div class="col-6 pt-1 pb-1 ">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control mx-1 " placeholder="URL" aria-label="URL"
+                        aria-describedby="button-addon2" id="url">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center search">
+            <div class="col-6 pt-1 pb-1 ">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control mx-1 " placeholder="Busco" aria-label="Busco"
+                        aria-describedby="button-addon2" id="Busco">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container text-center">
+        <div class="row pt-5 pb-8">
+            <div class="text-center">
+                <button class="btn btn-primary btn-lg" type="button" id="save">Guardar</button>
+                <button class="btn btn-secondary btn-lg" type="button" id="button-addon2">Cancelar</button>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="py-3 my-4 pt-5">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio | </a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Cambalaches | </a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Ingresar</a></li>
+        </ul>
+        <p class="text-center text-muted">© Cambalaches.net</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/products.js"></script>
+</body>
+
+</html>

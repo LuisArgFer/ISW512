@@ -1,0 +1,46 @@
+body{
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #606060;
+}
+
+.logo{
+    width: 150%;
+}
+
+h1{
+    font-size: 16px;
+    font-weight: bold; 
+
+}
+
+h2{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+button{
+    font-size: 11px
+}
+
+
+p{
+    padding: 10px;
+
+}
+
+
+a{
+    font-size: 11px; 
+    color: #c95555
+}
+
+#navbarSupportedContent ul li a{
+    font-size: 15px;
+    
+}
+
+.nav-link{
+    color: #c95555
+}
+
