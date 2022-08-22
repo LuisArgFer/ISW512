@@ -1,22 +1,22 @@
-function addProducts(){
+function addProducts() {
     const ProductName = $('#producto').val();
     const ProductDescription = $('#descripcion').val();
     const ProductURL = $('#url').val();
     const ProductIntereses = $('#busco').val();
 
     let ProductDb = JSON.parse(localStorage.getItem('productos'));
-    let session_user= JSON.parse(localStorage.getItem('session-user')); 
-    if(!ProductDb){
+    let session_user = JSON.parse(localStorage.getItem('session-user'));
+    if (!ProductDb) {
         ProductDb = [];
     }
     const product = {
         id: ProductDb.length + 1,
-        id_per: session_user.name,
+        id_per: localStorage.getItem('session-user'),
         name: ProductName,
         desc: ProductDescription,
         url: ProductURL,
-        interes: ProductIntereses
-       
+        busco: ProductIntereses
+
     }
     ProductDb.push(product);
     localStorage.setItem('productos', JSON.stringify(ProductDb));
@@ -25,25 +25,54 @@ function addProducts(){
     window.location.href = 'login.html';
 }
 
-$('#save').bind('click', function(){
+$('#save').bind('click', function () {
     addProducts();
 });
 
-$(window).on('load', function() {
-    debugger;
+$(window).on('load', function () {
     const products_container = document.getElementById('productscontainer');
     let products = []
     products = JSON.parse(localStorage.getItem('productos'));
-    
-    var divElement; 
-    for(var i=0;i<products.length;i++)
-    { 
-        divElement= document.createElement('div');
-        divElement.id = i;
-        products_container.appendChild(divElement);
-        var cardHtml = '<div class="col-4"><div style="width: 15rem;"><img class="card-img-top" src="'+products[i].url+'" alt="img"><div class="card-body"><h5 class="card-title">'+ products[i].name +'</h5><p class="card-text">'+ products[i].id_per +'</p><a href="#" class="btn btn-danger" onClick="deleteProduct('+ products[i].id +')">Delete</a><a href="#" class="btn btn-primary" onClick="deleteProduct('+ products[i].id +')">Editar</a></div></div></div>';
-        document.getElementById(divElement.id).innerHTML=cardHtml;         
+
+    var divElement;
+    for (var i = 0; i < products.length; i++) {
+        if (products[i].id_per == localStorage.getItem('session-user')) {
+            divElement = document.createElement('div');
+            divElement.id = i;
+            divElement.classList.add('col-md-4')
+            products_container.appendChild(divElement);
+            var producto = '<div class="card mt-3 mb-3 col-12" style=" height: 90%";><div class="row g-0"><div class="col-md-6"><img src="' + products[i].url + '" class="img-fluid" alt="..."></div><div class="col-md-6"><div class="card-body"><p class="card-text"><h5 class="card-title">' + products[i].name + '</h3><p> <a href="editar.html" class="btn btn-primary"onClick="editproduct(' + products[i].id + ')">Editar</a></small></p><p class="card-text"><a href="#" class="btn btn-danger" onClick="deleteProduct(' + products[i].id + ')">Delete</a></p></div></div></div></div>';
+            document.getElementById(divElement.id).innerHTML = producto;
+        }
     }
 });
 
+function editproduct(a) {
+    sessionStorage.setItem("producto-session",a) 
+}
+
+function detalleproducto(a) {
+    window.location.href="detalleproducto.html"
+    sessionStorage.setItem("producto-session",a)
+    
+}
+
+function deleteProduct(productId) {
+
+    let products = JSON.parse(localStorage.getItem('productos'))
+
+    const index = products.findIndex(product => product.id === productId);
+
+    if (index > -1) {
+        products.splice(index, 1);
+    }
+    localStorage.removeItem("productos");
+    localStorage.setItem("productos", JSON.stringify(products));
+    window.location.href = 'dashboard.html';
+}
+
+
+
+
+document.getElementById('nombre').innerHTML = '' + localStorage.getItem('session-user') + ''
 

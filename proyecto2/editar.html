@@ -9,14 +9,13 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/estilos_cambalaches.css" />
-
-    <title>Cambalaches</title>
+    <link rel="stylesheet" href="css/estilos_crear.css" />
+    <title>Editar Producto</title>
 </head>
 
 <body>
-     <!-- NAVBAR -->
-     <nav class="navbar navbar-expand-lg bg-light navbar-light">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img class="logo" src="images/logo.png" alt="imgenesquina">
@@ -46,18 +45,66 @@
         </div>
     </nav>
 
-    <div class="container-fluid text-center pt-5 pb-5">
-        <h2>Cambalaches</h2>
-        <p>Encuentra aqui los productos que te gusten para iniciar tu<br>Cambalache</p>
+    <div class="container-fluid text-center pt-5 pb-1">
+        <h2>Editar Producto</h2>
+    </div>
+
+    <div class="container-fluid text-center">
+        <p>Ingrese aquí la informacion del producto que desea editar en Cambalaches.net</p>
     </div>
 
     <div class="container">
-        <div class="row justify-content-start" id="productscontainercambalaches">
+        <div class="row justify-content-center ">
+            <div class="col-6 pt-1 pb-1 ">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control mx-1 " placeholder="Producto" aria-label="Producto"
+                        aria-describedby="button-addon2" id="producto1">
 
+                </div>
+            </div>
         </div>
+
+        <div class="row justify-content-center desc">
+            <div class="col-6 pt-1 pb-1 ">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control mx-1 " placeholder="Descripcion" aria-label="Descripcion"
+                        aria-describedby="button-addon2" id="descripcion1">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center urlimg">
+            <div class="col-6 pt-1 pb-1 ">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control mx-1 " placeholder="URL" aria-label="URL"
+                        aria-describedby="button-addon2" id="url1">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center search">
+            <div class="col-6 pt-1 pb-1 ">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control mx-1 " placeholder="Busco" aria-label="Busco"
+                        aria-describedby="button-addon2" id="busco1">
+
+                </div>
+            </div>
+        </div>
+
     </div>
 
+    <div class="container text-center">
+        <div class="row pt-5 pb-8">
+            <div class="text-center">
+                <button class="btn btn-primary btn-lg" type="button" onclick="editProduct()" id="editar">Guardar</button>
+                <button class="btn btn-secondary btn-lg" type="button" id="button-addon2">Cancelar</button>
 
+            </div>
+        </div>
+    </div>
 
 
 
@@ -69,10 +116,12 @@
         </ul>
         <p class="text-center text-muted">© Cambalaches.net</p>
     </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="js/cambalaches.js"></script>
+    <script src="js/editar.js"></script>
 </body>
 
 </html>

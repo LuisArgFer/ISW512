@@ -38,7 +38,7 @@ function login() {
 
     for (let i = 0; i < usersdb.length; i++) {
         if (correo == usersdb[i].correo && contra == usersdb[i].contra) {
-            localStorage.setItem('session-user', JSON.stringify(usersdb[i]));
+            localStorage.setItem('session-user', JSON.stringify(usersdb[i].name));
             window.location.href = 'index.html';
             logeado = 1;
         }
