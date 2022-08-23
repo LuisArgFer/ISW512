@@ -8,6 +8,17 @@ body{
     width: 150%;
 }
 
+.btnCerrar{
+    border: 0;
+}
+.btnCerrar:hover{
+    border: 0;
+    background: #AAB8B8;
+	box-shadow: 0 0 10px #AAB8B8, 0 0 40px
+	#AAB8B8, 0 0 80px #AAB8B8;
+    border-radius: 0.2em;
+}
+
 h1{
     font-size: 16px;
     font-weight: bold; 

@@ -1,15 +1,16 @@
+mostardetalle();
 function mostardetalle() {
     let products = JSON.parse(localStorage.getItem('productos'))
 
     const idprod = sessionStorage.getItem('producto-session')
-
+    
     products.forEach(producto => {
-        if (producto.id=idprod) {
-            document.getElementById("imagen").value = prod.name;
-            document.getElementById("nombreDetalle").value = prod.desc;
-            document.getElementById("descripcion").value = prod.url;
-            document.getElementById("busco").value = prod.busco;
-            document.getElementById("usuario").value = prod.id_per;
+        if (producto.id==idprod) {
+            document.getElementById("nombreDetalle").innerHTML = producto.name;
+            document.getElementById("descripcion").textContent = producto.desc;
+            document.getElementById("imagen").src = producto.url;
+            document.getElementById("busco").textContent = producto.busco;
+            document.getElementById("usuario").textContent = producto.id_per;
             
         }
         

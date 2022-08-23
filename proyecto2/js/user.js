@@ -39,7 +39,7 @@ function login() {
     for (let i = 0; i < usersdb.length; i++) {
         if (correo == usersdb[i].correo && contra == usersdb[i].contra) {
             localStorage.setItem('session-user', JSON.stringify(usersdb[i].name));
-            window.location.href = 'index.html';
+            window.location.href = 'dashboard.html';
             logeado = 1;
         }
     }
@@ -53,11 +53,15 @@ $('#login').bind('click', function () {
     login();
 });
 
+$('#cancelar').bind('click', function () {
+    window.location.href = 'index.html';
+});
+
 $('#register').bind('click', function () {
     addUser();
 });
 
 function logout(){
     localStorage.setItem('session-user', null);
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
 }

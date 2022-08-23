@@ -1,4 +1,4 @@
-
+session();
 $(window).on('load', function () {
     var a = sessionStorage.getItem('producto-session')
     let products = JSON.parse(localStorage.getItem('productos'))
@@ -47,8 +47,12 @@ function editProduct() {
         window.location.href='dashboard.html';
 
     }
+}
 
-
-
-
+function session() {
+    const datos = JSON.parse(localStorage.getItem('session-user'));
+    if (datos==null) {
+        window.location.href = 'index.html';
+        
+    }  
 }

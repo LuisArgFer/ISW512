@@ -1,4 +1,6 @@
+session();
 function addProducts() {
+    session();
     const ProductName = $('#producto').val();
     const ProductDescription = $('#descripcion').val();
     const ProductURL = $('#url').val();
@@ -22,14 +24,19 @@ function addProducts() {
     localStorage.setItem('productos', JSON.stringify(ProductDb));
 
     console.log(JSON.parse(localStorage.getItem('productos')));
-    window.location.href = 'login.html';
+    window.location.href = 'dashboard.html';
 }
 
 $('#save').bind('click', function () {
     addProducts();
 });
 
+$('#cancel').bind('click', function () {
+    window.location.href = 'dashboard.html';
+});
+
 $(window).on('load', function () {
+    session();
     const products_container = document.getElementById('productscontainer');
     let products = []
     products = JSON.parse(localStorage.getItem('productos'));
@@ -51,11 +58,14 @@ function editproduct(a) {
     sessionStorage.setItem("producto-session",a) 
 }
 
-function detalleproducto(a) {
-    window.location.href="detalleproducto.html"
-    sessionStorage.setItem("producto-session",a)
-    
+function session() {
+    const datos = JSON.parse(localStorage.getItem('session-user'));
+    if (datos==null) {
+        window.location.href = 'index.html';
+        
+    }  
 }
+
 
 function deleteProduct(productId) {
 
